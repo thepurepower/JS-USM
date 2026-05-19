@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>To-Do List</h1>
+
+<form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Введите задачу">
+    <button type="submit">Добавить</button>
+</form>
+
+<p id="error"></p>
+
+<input type="text" id="searchInput"
+placeholder="Поиск">
+
+<select id="filter">
+
+<option value="all">Все</option>
+<option value="completed">Выполненные</option>
+<option value="active">Невыполненные</option>
+
+</select>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script type="module" src="/JS/ToDoProject/app.js"></script>
+
+</body>
+</html>
