@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Учет личных финансов</h1>
+
+    <form id="transaction-form">
+        <input type="number" id="amount" placeholder="Сумма" required>
+
+        <select id="category" required>
+            <option value="">Выберите категорию</option>
+            <option value="Доход">Доход</option>
+            <option value="Еда">Еда</option>
+            <option value="Транспорт">Транспорт</option>
+            <option value="Покупки">Покупки</option>
+            <option value="Другое">Другое</option>
+        </select>
+
+        <input type="text" id="description" placeholder="Описание" required>
+
+        <button type="submit">Добавить</button>
+    </form>
+
+    <p id="error-message"></p>
+
+    <h2>Список транзакций</h2>
+
+    <table id="transactions-table">
+        <thead>
+            <tr>
+                <th>Дата и время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="transactions-body"></tbody>
+    </table>
+
+    <h2>Общая сумма</h2>
+    <p id="total">0</p>
+
+    <h2>Полное описание транзакции</h2>
+    <p id="full-description">Выберите транзакцию из таблицы</p>
+
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
